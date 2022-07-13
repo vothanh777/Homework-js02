@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="exercise">
+      <h2 class="header">Bài 1: Tính tiền lương nhân viên</h2>
+      <div class="wrapper">
+        <div class="item input">
+          <h3>Input</h3>
+          <ul>
+            <li>Lương 1 ngày</li>
+            <li>Số ngày làm</li>
+          </ul>
+        </div>
+        <div class="item process">
+          <h3>Xử lý</h3>
+          <ul>
+            <li>
+              Tạo 2 biến: Lương 1 ngày và Số ngày làm tương ứng salary1Day và
+              workingDays
+            </li>
+            <li>Tạo biến: tiền lương - Salary</li>
+            <li>
+              Gán giá trị người dùng nhập vào cho salary1Day và workingDays
+            </li>
+            <li>Salary = salary1Day * workingDays</li>
+            <li>
+              Người dùng nhấn button tính lương để hiển thị lương nhân viên
+            </li>
+          </ul>
+        </div>
+        <div class="item output">
+          <h3>Output</h3>
+          <ul>
+            <li>Lương nhân viên</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <input id="salary1Day" type="number" placeholder="Lương 1 ngày" />
+        <input id="workingDays" type="number" placeholder="Số ngày làm việc" />
+        <button onclick="salaryCal()">Tính lương</button>
+        <label>Tiền lương: </label> <span id="display"></span>
+      </div>
+    </div>
+    <hr />
+
+    <div class="exercise">
+      <h2 class="header">Bài 2: Tính giá trị trung bình</h2>
+      <div class="wrapper">
+        <div class="item input">
+          <h3>Input</h3>
+          <ul>
+            <li>5 số thực</li>
+          </ul>
+        </div>
+        <div class="item process">
+          <h3>Xử lý</h3>
+          <ul>
+            <li>Tạo 5 biến lưu lại 5 số mà người dùng nhập vào.</li>
+            <li>Tạo biến trung bình cộng - average</li>
+            <li>average = (num1 + num2 +num3 + num4 + num5)/5</li>
+            <li>Người dùng nhấn button tính TB cộng để hiển thị kết quả</li>
+          </ul>
+        </div>
+        <div class="item output">
+          <h3>Output</h3>
+          <ul>
+            <li>Trung bình cộng của 5 số</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <input id="num1" type="number" placeholder="Số thứ 1" />
+        <input id="num2" type="number" placeholder="Số thứ 2" />
+        <input id="num3" type="number" placeholder="Số thứ 3" />
+        <input id="num4" type="number" placeholder="Số thứ 4" />
+        <input id="num5" type="number" placeholder="Số thứ 5" />
+        <button onclick="AverageCal()">Tính TB cộng</button>
+        <label>Trung bình cộng: </label> <span id="displayAverage"></span>
+      </div>
+    </div>
+    <hr />
+
+    <div class="exercise">
+      <h2 class="header">Bài 3: Quy đổi tiền</h2>
+      <div class="wrapper">
+        <div class="item input">
+          <h3>Input</h3>
+          <ul>
+            <li>Số tiền USD</li>
+          </ul>
+        </div>
+        <div class="item process">
+          <h3>Xử lý</h3>
+          <ul>
+            <li>Tạo biến usdAmount lưu lại số USD mà người dùng nhập vào.</li>
+            <li>Tạo biến result</li>
+            <li>result = usdAmount * 23500</li>
+            <li>
+              Người dùng nhấn button Quy đổi tiền để hiển thị kết quả đổi USD
+              sang VND
+            </li>
+          </ul>
+        </div>
+        <div class="item output">
+          <h3>Output</h3>
+          <ul>
+            <li>Số tiền được quy đổi từ USD sang VND</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <input id="usdAmount" type="number" placeholder="Số USD" />
+        <button onclick="usdExchange()">Quy đổi tiền</button>
+        <label>Số tiền (USD->VND): </label> <span id="displayVnd"></span>
+      </div>
+    </div>
+    <hr />
+
+    <div class="exercise">
+      <h2 class="header">Bài 4: Tính diện tích, chu vi hình chữ nhật</h2>
+      <div class="wrapper">
+        <div class="item input">
+          <h3>Input</h3>
+          <ul>
+            <li>Chiều dài</li>
+            <li>Chiều rộng</li>
+          </ul>
+        </div>
+        <div class="item process">
+          <h3>Xử lý</h3>
+          <ul>
+            <li>
+              Tạo 2 biến length, width lưu lại chiều dài và chiều rộng mà người
+              dùng nhập vào.
+            </li>
+            <li>Tạo biến perimeter và square</li>
+            <li>perimeter = (length + width) * 2</li>
+            <li>square = length * width</li>
+            <li>Người dùng nhấn button tính chu vi và diện tích:</li>
+          </ul>
+        </div>
+        <div class="item output">
+          <h3>Output</h3>
+          <ul>
+            <li>Chu vi và diện tích</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <input id="length" type="number" placeholder="Chiều dài" />
+        <input id="width" type="number" placeholder="Chiều rộng" />
+        <button onclick="perimeterSquareCal()">Tính</button>
+        <label>Chu vi: </label> <span id="perimeter"></span>
+        <label>, Diện tích: </label> <span id="square"></span>
+      </div>
+    </div>
+    <hr />
+
+    <div class="exercise">
+      <h2 class="header">Bài 5: Tính tổng 2 ký số</h2>
+      <div class="wrapper">
+        <div class="item input">
+          <h3>Input</h3>
+          <ul>
+            <li>Số có 2 chữ số</li>
+          </ul>
+        </div>
+        <div class="item process">
+          <h3>Xử lý</h3>
+          <ul>
+            <li>
+              Tạo biến number lưu lại số có 2 chữ số mà người dùng nhập vào.
+            </li>
+            <li>Tạo biến num1 và num2 lưu lại số hàng đơn vị và hàng chục</li>
+            <li>num1 = number % 10</li>
+            <li>num2 = (number - num1) / 10</li>
+            <li>sum = num1 + num2</li>
+            <li>Người dùng nhấn button Tính tổng</li>
+          </ul>
+        </div>
+        <div class="item output">
+          <h3>Output</h3>
+          <ul>
+            <li>Tổng của 2 ký số của số có 2 chữ số</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <input id="numSum" type="number" placeholder="Số có 2 chữ số" />
+        <button onclick="sum()">Tính tổng</button>
+        <label>Tổng của 2 ký số: </label> <span id="displaySum"></span>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

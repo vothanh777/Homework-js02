@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0 80px;
+}
+.header {
+  margin-top: 50px;
+  text-align: center;
+}
+.wrapper {
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 2px solid green;
+}
+.item {
+  padding-left: 20px;
+}
+.process,
+.output {
+  border-left: 2px solid green;
+}
+.exercise {
+  margin-bottom: 40px;
+}
